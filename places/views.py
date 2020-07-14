@@ -12,8 +12,8 @@ def map_view(request):
         }
     return render(request, 'map.html', context)
 
-def location_view(request, place_id):
-    place = get_object_or_404(Location, place_id=place_id)
+def location_view(request, id):
+    place = get_object_or_404(Location, id=id)
     images = []
     for image in Image.objects.filter(location=place.id):
         images.append(str(image.image.file))

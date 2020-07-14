@@ -5,5 +5,5 @@ from places.views import location_view
 
 urlpatterns = [
     path('', map_view),
-    path('<place_id>/', location_view),
+    path('<id>/', location_view),
 ]
