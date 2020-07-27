@@ -1,11 +1,12 @@
 from django.db import models
 from geojson import Feature, Point
+from tinymce.models import HTMLField
 
 class Location(models.Model):
     title = models.CharField(max_length=300)
     place_id = models.CharField(max_length=100, unique=True, default='placeId')
     description_short = models.TextField(default='Описание')
-    description_long = models.TextField(default='Подробное описание')
+    description_long = HTMLField(default='Подробное описание')
     coordinates_lng = models.FloatField()
     coordinates_lat = models.FloatField()
     details_url = ''
