@@ -24,6 +24,10 @@ class Image(models.Model):
     title = models.CharField(max_length=100)
     location = models.ForeignKey(Location, on_delete=models.CASCADE, default=0)
     image = models.ImageField()
+    position = models.PositiveIntegerField(default=0, blank=False, null=False)
     
     def __str__(self):
         return self.title
+    
+    class Meta(object):
+        ordering = ('position',)
