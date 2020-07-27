@@ -2,10 +2,12 @@ from django.contrib import admin
 from .models import Location, Image
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
+from adminsortable2.admin import SortableInlineAdminMixin
 
-class ImageInLine(admin.TabularInline):
+class ImageInLine(SortableInlineAdminMixin, admin.TabularInline):
     fields = ('title', 'image', 'get_preview', 'position')
     readonly_fields = ('get_preview',)
+    extra = 1
     model = Image
     
     def get_preview(self, obj):
@@ -21,5 +23,5 @@ class LocationAdmin(admin.ModelAdmin):
     inlines = [
         ImageInLine,
     ]
-
+    
 admin.site.register(Image)
