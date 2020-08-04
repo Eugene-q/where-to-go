@@ -3,6 +3,8 @@ Training project on Django "Interesting places in Moscow" course [dvmn.org](http
 Locations are displayed on the map. By clicking on them, you can view related information. 
 In the administrative panel it is possible to add and edit the locations and associated photos. 
 Photos can be sorted by dragging and dropping.
+
+[DEMO](http://eugeneq.pythonanywhere.com/)
 # installing
 * Download the code.
 * Go to the project folder
