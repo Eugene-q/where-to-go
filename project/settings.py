@@ -28,7 +28,8 @@ DATABASES = {
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+#SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = '+d5_e)fz5@5a*s7ti27u#ms-nq-1-tv3^3@8$f*bfn_$z8akx*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
