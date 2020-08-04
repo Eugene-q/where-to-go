@@ -4,7 +4,7 @@ Locations are displayed on the map. By clicking on them, you can view related in
 In the administrative panel it is possible to add and edit the locations and associated photos. 
 Photos can be sorted by dragging and dropping.
 
-[DEMO](http://eugeneq.pythonanywhere.com/)
+[DEMO](http://wheretogo.pythonanywhere.com/)
 # installing
 * Download the code.
 * Go to the project folder
