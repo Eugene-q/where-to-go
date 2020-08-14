@@ -21,7 +21,7 @@ class Location(models.Model):
                        })
 
 class Image(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, default='Image')
     location = models.ForeignKey(Location, on_delete=models.CASCADE, default=0)
     image = models.ImageField()
     position = models.PositiveIntegerField(default=0, blank=False, null=False)
